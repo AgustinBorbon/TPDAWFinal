@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/insert.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Nuevo Articulo</p>
+        </div>
+        <form class="form-group">
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="nombre" placeholder="Articulo" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="description" name="description" placeholder="Descripción" required>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" onclick="createartic()">Guardar</button>
+                <p id="result"></p>
+            </div>
+        </form>
+        <p><input type="button-volver" value="Volver al menú" OnClick="location.href='abmartic.html'"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

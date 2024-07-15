@@ -1,0 +1,32 @@
+create database LoginDB
+go
+use LoginDB
+go
+
+create table UsersLogin(
+	ID int identity(1,1) primary key not null,
+	Salt varchar(50) not null,
+	UserName varchar(100) not null,
+	PasswordHash varchar(100) not null
+)
+
+create table Privilege(
+	ID int identity(1,1) primary key not null,
+	Description varchar(100) not null
+)
+
+create table RefreshToken(
+	ID int identity(1,1) primary key not null,
+	UsersLoginId int not null,
+	Token varchar(100) not null,
+    Expires smalldatetime not null,
+    constraint FK_UsersLogin_RefreshToken foreign key (UsersLoginId) references UsersLogin(ID)
+)
+
+create table UserPriviliges(
+	ID int identity(1,1) primary key not null,
+	UsersLoginId int not null,
+    PrivilegeId int not null,
+    constraint FK_UsersLogin_UserPriviliges foreign key (UsersLoginId) references UsersLogin(ID),
+    constraint FK_Privilege_UserPriviliges foreign key (PrivilegeId) references Privilege(ID)
+)

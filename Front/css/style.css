@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+    background: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #ddd;
+}
+
+.login {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+}
+
+.login-header,
+.login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.login-header {
+    background: #555;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-container {
+    border-radius: 0px 0px 8px 8px;
+    background: #444;
+    padding: 12px;
+}
+
+.login p {
+    padding: 12px;
+}
+
+.login input[type="email"],
+.login input[type="text"],
+.login input[type="password"] {
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    background: #555;
+    border-color: #888;
+    color: #ddd;
+}
+
+input[type="text"],
+input[type="password"] {
+        border-radius: 8px;
+    box-sizing: border-box;
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    background: #555;
+    border-color: #888;
+    color: #ddd;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+    border-color: #aaa;
+}
+
+button[type="submit"],
+input[type="button-volver"] {
+    text-align: center;
+    border-radius: 8px;
+    height: 40px;
+    width: 120px;
+    background: #555;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login input[type="button"] {
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    background: #555;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login input[type="button"]:hover {
+    background: #777;
+}
+
+.login input[type="button"]:focus {
+    border-color: #aaa;
+}
+
+img {
+    background-position: right 45px;
+    float: right;
+    width: 60px;
+    height: 60px;
+}

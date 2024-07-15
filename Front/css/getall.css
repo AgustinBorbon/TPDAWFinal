@@ -1,0 +1,59 @@
+body {
+    background: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #ddd;
+    text-align: center;
+}
+
+table {
+    border: 1px solid #555;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    background-color: #444;
+    color: #ddd;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: center;
+}
+
+div {
+    background-color: #444;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.intercambiar img,
+.borrar img {
+    width: 25px;
+}
+
+input[type="button"] {
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: block;
+    width: 60%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    background: #555;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #777;
+}

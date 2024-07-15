@@ -1,0 +1,51 @@
+body {
+    background: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #ddd;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 50px;
+}
+
+.container {
+    border-radius: 8px;
+    background-color: #444;
+    margin: auto;
+    height: auto;
+    width: 630px;
+    color: #ddd;
+}
+
+.row {
+    background-color: #555;
+    height: 75px;
+    width: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+img {
+    background-position: right 45px;
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+
+#result {
+    margin-top: 5px;
+}

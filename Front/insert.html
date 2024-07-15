@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/insert.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Nuevo Usuario</p>
+        </div>
+        <form class="form-group">
+            <label for="rol" class="col-sm-2 control-label">Rol:</label>
+            <div class="col-sm-10">
+                <select name="rol-names" id="rol-names">
+                    <option value="admin">Admin</option>
+                    <option value="usuario">Usuario</option>
+                </select>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Usuario" required>
+            </div>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" onclick="create()">Guardar</button>
+                <p id="result"></p>
+            </div>
+        </form>
+        <p><input type="button-volver" value="Volver al menú" OnClick="location.href='abm.html'"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
